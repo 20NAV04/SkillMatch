@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #ababab #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #ababab;
+    border-radius: 19px;
+    border: 0px solid #ffffff;
+  }
+
+.clickable:hover {
+    cursor: pointer;
+}
+
+.nonexpanding {
+    min-height: 0px;
+    min-width: 0px;
+}
+
+.fill {
+    height: 100%;
+    width: 100%;
+}
+
+.dbg1 {
+    background-color: red;
+}
+
+.dbg2 {
+    background-color: blue;
+}
+
+.dbg3 {
+    background-color: green;
+}
+
+.dbg4 {
+    background-color: yellow;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.title2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.float {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: flex;
+}
+
+:root {
+    font-size: 16px;
+    font-family: roboto, sans-serif;
+    --off-white: rgb(247, 243, 243);
+    --cream: #EFEAEA;
+    --letter: rgb(48, 48, 48);
+    --dark:  rgb(44, 44, 44);
+    --warning: rgb(170, 39, 39);
+    color: var(--letter);
+}
+
+.warn {
+    color: var(--warning);
+}
+
+.success {
+    color: green;
+}
+
+body, html {
+    height: 100vh;
+    width: 100vw;
+}
+
+#all-wrapper {
+    display: grid;
+    grid-template-rows: 1fr 10fr;
+    height: 100%;
+    width: 100%;
+}
+
+body, html {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    background: var(--cream);
+}
+
+#header {
+    background-color: var(--off-white);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    box-shadow: -1px 20px 11px -3px rgba(0,0,0,0.05);
+    -webkit-box-shadow: -1px 20px 11px -3px rgba(0,0,0,0.05);
+    -moz-box-shadow: -1px 20px 11px -3px rgba(0,0,0,0.05);
+    z-index: 99;    
+}
+
+#logo { 
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+}
+
+#header-right {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, min-content);
+    gap: 1rem;
+    justify-content: end;
+    font-weight: bold;
+}
+
+#logout-btn {
+    color: var(--warning);
+}
+
+#body {
+    padding: 2rem;
+    height: 100%;
+    width: 100%;
+}
