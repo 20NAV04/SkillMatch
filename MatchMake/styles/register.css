@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.nonexpanding {
+    min-height: 0px;
+    min-width: 0px;
+}
+
+:root {
+    font-size: 16px;
+    font-family: roboto, sans-serif;
+    --off-white: rgb(247, 243, 243);
+    --letter: rgb(48, 48, 48);
+    --dark:  rgb(44, 44, 44);
+    color: var(--letter);
+}
+
+body, html {
+    height: 100vh;
+    width: 100vw;
+}
+
+#header {
+    background-color: var(--off-white);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    box-shadow: -1px 20px 11px -3px rgba(0,0,0,0.17);
+    -webkit-box-shadow: -1px 20px 11px -3px rgba(0,0,0,0.17);
+    -moz-box-shadow: -1px 20px 11px -3px rgba(0,0,0,0.17);
+    z-index: 99;    
+}
+
+#logo { 
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+}
+
+#header-right {
+    display: grid;
+    grid-template-columns: min-content min-content;
+    gap: .5rem;
+    justify-content: end;
+    font-weight: bold;
+}
+
+#all-wrapper {
+    display: grid;
+    grid-template-rows: 1fr 10fr;
+    height: 100%;
+    width: 100%;
+}
+
+#all-wrapper > div {
+    height: 100%;
+    width: 100%;
+}
+
+#body {
+    background-color: grey;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem 2rem;
+}
+
+#tint {
+    background-color: rgba(0, 0, 0, 0.699);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 2
+}
+
+#landing-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 1;
+}
+
+#hero-wrapper {
+    position: relative;
+    z-index: 3;
+    color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#hero-title {
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+#login-wrapper {
+    position: relative;
+    z-index: 3;
+    align-self: center;
+    justify-self: center;
+    height: 80%;
+    width: 60%;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: -1px 20px 11px -3px rgba(0,0,0,0.17);
+    -webkit-box-shadow: -1px 20px 11px -3px rgba(0,0,0,0.17);
+    -moz-box-shadow: -1px 20px 11px -3px rgba(0,0,0,0.17);
+}
+
+#login-form {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: min-content 1.2fr 1fr;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+#login-form > div:first-child {
+    font-size: 2rem;
+    text-align: center;
+    
+}
+
+#login-form > div:nth-child(2) {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 30% 30% 30% 1fr;
+    gap: 1rem;
+}
+
+#login-form > div:last-child {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 35% 1fr;
+    gap: 1rem;
+}
+
+#login-btn {
+    text-align: center;
+}
+
+#register-btn {
+    font: inherit;
+    background-color: var(--dark);
+    border: none;
+    border-radius: .5rem;
+    color: white;
+}
+
+input {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: .5rem;
+    border: 1px solid var(--dark);
+}
+
+#forgot-password-btn, #login-btn {
+    color: grey;
+    text-decoration: underline;
+    font-size: .9rem;
+    
+}
+
+.clickable:hover {
+    cursor: pointer;
+}
+
+
+

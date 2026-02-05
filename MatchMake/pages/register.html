@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MatchMake</title>
+    <link rel="icon" type="mage/x-icon" href="./assets/favicon.png">
+    <link rel="stylesheet" href="../styles/register.css">
+    <script src="https://kit.fontawesome.com/ee22af0760.js" crossorigin="anonymous"></script>
+</head>
+<body class = "nonexpanding">
+    <div id="all-wrapper" class = "nonexpanding">
+        <div id="header">
+            <div id="header-left">
+                <a href="../index.html" id="logo">
+                    <i class="fa-solid fa-wave-square"></i>
+                    MatchMake
+                </a>
+            </div>
+            <div id="header-right">
+                <a href="../index.html">Login</a>
+                <a href="./register.html">Register</a>
+            </div>
+        </div>
+        <div id="body" class = "nonexpanding">
+            <div id="tint"></div>
+            <video src="../assets/landing.mp4" muted loop autoplay id="landing-video" ></video>
+            
+            <div id="hero-wrapper">
+                <div id="hero-title">Smarter Resume Screening. Built for Every Company.</div>
+                <div id="hero-body">Upload job descriptions and resumes from your existing hiring systems and receive ranked, explainable screening results powered by AI.</div>
+            </div>
+
+            <div id="login-wrapper">
+                <form id="login-form" name="register">
+                    <div>Almost There.</div>
+                    <div>
+                        <input type="text" name="email" required placeholder="Email">
+                        <input type="password" name="password" placeholder="Password">
+                        <input type="password" name="confirm-password" placeholder="Confirm Password">
+                    </div>
+                    <div>   
+                        <button type="submit" id="register-btn" class="clickable">Create Account</button>
+                        <div id="login-btn"><a href="../index.html">Already have an account?</a></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

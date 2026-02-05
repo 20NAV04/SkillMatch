@@ -5,8 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MatchMake</title>
     <link rel="icon" type="mage/x-icon" href="./assets/favicon.png">
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="https://kit.fontawesome.com/ee22af0760.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    
+<body class = "nonexpanding">
+    <div id="all-wrapper" class = "nonexpanding">
+        <div id="header">
+            <div id="header-left">
+                <a href="./index.html" id="logo">
+                    <i class="fa-solid fa-wave-square"></i>
+                    MatchMake
+                </a>
+            </div>
+            <div id="header-right">
+                <a href="./index.html">Login</a>
+                <a href="./pages/register.html">Register</a>
+            </div>
+        </div>
+        <div id="body" class = "nonexpanding">
+            <div id="tint"></div>
+            <video src="./assets/landing.mp4" muted loop autoplay id="landing-video" ></video>
+            
+            <div id="hero-wrapper">
+                <div id="hero-title">Smarter Resume Screening. Built for Every Company.</div>
+                <div id="hero-body">Upload job descriptions and resumes from your existing hiring systems and receive ranked, explainable screening results powered by AI.</div>
+            </div>
+
+            <div id="login-wrapper">
+                <form id="login-form" name="login">
+                    <div>Welcome Back.</div>
+                    <div>
+                        <input type="text" name="email" required placeholder="Email">
+                        <input type="password" name="password" placeholder="Password">
+                        <div id="forgot-password-btn" class="clickable">Forgot Password?</div>
+                    </div>
+                    <div>   
+                        <button type="submit" id="login-btn" class="clickable">Log In</button>
+                        <div id="register-btn"><a href="./pages/register.html">Don't have an account?</a></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
