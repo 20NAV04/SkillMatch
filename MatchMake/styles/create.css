@@ -1,0 +1,66 @@
+#job-form {
+    display: grid;
+    grid-template:
+    'title summary summary' 1fr
+    'description skills qualifications' 1fr
+    'description skills qualifications' 1fr
+    'description skills qualifications' 1fr
+    /1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.job-input {
+    height: 100%;
+    width: 100%;
+    min-height: 0px;
+    min-width: 0px;
+    display: grid;
+    grid-template-rows: min-content 1fr 5fr;
+}
+
+
+.job-input:first-of-type {
+    grid-area: title;
+    gap: .5rem;
+}
+
+.job-input:nth-of-type(2) {
+    grid-area: summary;
+    gap: .5rem;
+}
+
+.job-input:nth-of-type(2) > .title2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+}
+
+.job-input:nth-of-type(3) {
+    grid-area: description;
+}
+
+.job-input:nth-of-type(4) {
+    grid-area: skills;
+}
+
+.job-input:nth-of-type(5) {
+    grid-area: qualifications;
+}
+
+#job-form textarea, #job-form input {
+    resize: None;
+    border: none;
+    border-radius: 1rem;
+    padding: .5rem 1rem;
+}
+
+#job-form button {
+    width: 30%;
+    justify-self: end;
+    font-family: inherit;
+    border: none;
+    background-color: var(--letter);
+    color: white;
+    border-radius: 1rem;
+
+}

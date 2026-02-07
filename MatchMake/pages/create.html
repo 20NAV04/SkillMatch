@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MatchMake</title>
+     <title>MatchMake</title>
+    <link rel="icon" type="mage/x-icon" href="./assets/favicon.png">
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/create.css">
+    <script src="https://kit.fontawesome.com/ee22af0760.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="all-wrapper">
+        <div id="header">
+            <div id="header-left">
+                <a href="./home.html" id="logo">
+                    <i class="fa-solid fa-wave-square"></i>
+                    MatchMake
+                </a>
+            </div>
+            <div id="header-right" class="nonexpanding">
+                <a href="./pages/create-job.html">Create</a>
+                <a href="../index.html" id ="logout-btn">Logout</a>
+                <a href="../pages/account-settings"><i class="fa-solid fa-gear"></i></a>
+            </div>
+        </div>
+        <div id="body" class="nonexpanding fill">
+            <form name="job-form" id="job-form" class="nonexpanding fill">
+                <div class="job-input">
+                    <div class="title2">Job Title</div>
+                    <div class="field-explanation helper">Enter a concise and descriptive title for the role</div>
+                    <input type="text" id="title" name="title" required>
+                </div>
+                <div class="job-input">
+                    <div class="title2">Job Summary <button type="submit" class="clickable">Finish</button></div>
+                    <div class="field-explanation helper">Provide a brief overview of the position. This summary is shown for quick reference and does not need to include detailed requirements.</div>
+                    <textarea name="summary" id="summary" required></textarea>
+                </div>
+                <div class="job-input">
+                    <div class="title2">Job Description</div>
+                    <div class="field-explanation helper">Describe the role in detail, including key responsibilities, expectations, and the nature of the work. This section is used for AI-assisted analysis, so include relevant role-specific information.</div>
+                    <textarea name="description" id="description" required></textarea>
+                </div>
+                <div class="job-input">
+                    <div class="title2">Required Skills</div>
+                    <div class="field-explanation helper">List the core technical and professional skills required for the role (e.g., programming languages, tools, or soft skills)</div>
+                    <textarea name="skills" id="skills" required></textarea>
+                </div>
+                <div class="job-input">
+                    <div class="title2">Qualifications</div>
+                    <div class="field-explanation helper">Specify required education, certifications, years of experience, or other formal requirements relevant to the position.</div>
+                    <textarea name="qualifications" id="qualifications" required></textarea>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

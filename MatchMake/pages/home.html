@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MatchMake</title>
-    <link rel="icon" type="mage/x-icon" href="./assets/favicon.png">
+    <link rel="icon" type="mage/x-icon" href="../assets/favicon.png">
     <link rel="stylesheet" href="../styles/common.css">
     <link rel="stylesheet" href="../styles/home.css">
     <script src="https://kit.fontawesome.com/ee22af0760.js" crossorigin="anonymous"></script>
@@ -12,6 +12,20 @@
 </head>
 <body class="nonexpanding">
     <div id="all-wrapper" class="nonexpanding">
+        <div id="upload-modal-wrapper" class="float hidden">
+            <div class="modal-tint float"></div>
+            <div id="upload-modal">
+                <input type="file" name="resume-upload" id="resume-upload">
+                <div id="upload-modal-top" class="fill">
+                    <label for="resume-upload"><i class="fa-solid fa-file-arrow-up clickable"></i></label>
+                    <div id="upload-desc">Upload files (.pdf only)</div>
+                </div>
+                <div id="upload-modal-bottom" class="fill">
+                    <div id="close-upload-btn" class="fill clickable">Close</div>
+                    <div id="submit-upload-btn" class="fill clickable">Submit</div>
+                </div>
+            </div>
+        </div>
         <div id="header">
             <div id="header-left">
                 <a href="./home.html" id="logo">

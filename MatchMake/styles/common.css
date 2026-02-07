@@ -74,6 +74,11 @@ a {
     font-weight: bold;
 }
 
+.helper {
+    font-size: .8rem;
+    color: grey;
+}
+
 .float {
     height: 100%;
     width: 100%;
@@ -84,8 +89,12 @@ a {
     display: none;
 }
 
-.visible {
+.flex-visible {
     display: flex;
+}
+
+.grid-visible {
+    display:grid;
 }
 
 :root {
