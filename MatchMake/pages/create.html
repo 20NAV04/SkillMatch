@@ -4,27 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MatchMake</title>
-     <title>MatchMake</title>
     <link rel="icon" type="mage/x-icon" href="./assets/favicon.png">
     <link rel="stylesheet" href="../styles/common.css">
     <link rel="stylesheet" href="../styles/create.css">
+    <script src="../components/header.js" defer></script>
     <script src="https://kit.fontawesome.com/ee22af0760.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="all-wrapper">
-        <div id="header">
-            <div id="header-left">
-                <a href="./home.html" id="logo">
-                    <i class="fa-solid fa-wave-square"></i>
-                    MatchMake
-                </a>
-            </div>
-            <div id="header-right" class="nonexpanding">
-                <a href="./pages/create-job.html">Create</a>
-                <a href="../index.html" id ="logout-btn">Logout</a>
-                <a href="../pages/account-settings"><i class="fa-solid fa-gear"></i></a>
-            </div>
-        </div>
+        <header-component></header-component>
         <div id="body" class="nonexpanding fill">
             <form name="job-form" id="job-form" class="nonexpanding fill">
                 <div class="job-input">

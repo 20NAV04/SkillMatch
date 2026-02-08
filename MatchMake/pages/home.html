@@ -7,11 +7,23 @@
     <link rel="icon" type="mage/x-icon" href="../assets/favicon.png">
     <link rel="stylesheet" href="../styles/common.css">
     <link rel="stylesheet" href="../styles/home.css">
+    <script src="../components/header.js" defer></script>
     <script src="https://kit.fontawesome.com/ee22af0760.js" crossorigin="anonymous"></script>
     
 </head>
 <body class="nonexpanding">
     <div id="all-wrapper" class="nonexpanding">
+        <div class="confirmation-modal-wrapper float hidden" id="delete-confirmation">
+            <div class="modal-tint float"></div>
+            <div class="confirmation-modal dbg1">
+                <div class="advisement">Are you sure you want to delete this job listing? This action will permanently remove the listing and all associated screening results. This action cannot be undone.</div>
+                <div class="actions">
+                    <div id="submit-delete-btn" class="clickable">Confirm</div>
+                    <div id="close-delete-btn" class="clickable">Cancel</div>
+                </div>
+            </div>
+        </div>
+
         <div id="upload-modal-wrapper" class="float hidden">
             <div class="modal-tint float"></div>
             <div id="upload-modal">
@@ -26,24 +38,12 @@
                 </div>
             </div>
         </div>
-        <div id="header">
-            <div id="header-left">
-                <a href="./home.html" id="logo">
-                    <i class="fa-solid fa-wave-square"></i>
-                    MatchMake
-                </a>
-            </div>
-            <div id="header-right" class="nonexpanding">
-                <a href="./pages/create-job.html">Create</a>
-                <a href="../index.html" id ="logout-btn">Logout</a>
-                <a href="../pages/account-settings"><i class="fa-solid fa-gear"></i></a>
-            </div>
-        </div>
+        <header-component></header-component>
         <div id="body" class = "nonexpanding fill">
             <div id="body-top" class="nonexpanding fill">
                 <div id="body-top-left" class = "fill">
                     <div class="title">Active Listing</div>
-                    <a href="../pages/create-job.html" class="title"><i class="fa-solid fa-plus"></i></a>
+                    <a href="../pages/create.html" class="title"><i class="fa-solid fa-plus"></i></a>
                 </div>
                 <div id="body-top-right" class="fill">
                     <input type="text" id="searchbar" placeholder="Search">

@@ -122,10 +122,6 @@
     align-items: center;
 }
 
-.modal-tint {
-    background-color: rgba(250, 250, 250, 0.74);
-}
-
 #upload-modal {
     position: relative;
     background-color: white;
