@@ -7,10 +7,15 @@
     <link rel="icon" type="mage/x-icon" href="../assets/favicon.png">
     <link rel="stylesheet" href="../styles/common.css">
     <link rel="stylesheet" href="../styles/home.css">
-    <script src="../components/header.js" defer></script>
-    <script src="../scripts/home.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="https://kit.fontawesome.com/ee22af0760.js" crossorigin="anonymous"></script>
-    
+    <script src="../scripts/supabase.js"></script>
+    <script src="../scripts/auth.js"></script>
+    <script src="../components/header.js" defer></script>
+    <script src="../scripts/common.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/5.4.149/pdf.min.mjs" type="module"></script>
+    <script src="../scripts/ai.js" type="module" defer></script>
+    <script src="../scripts/home.js" type = "module" defer></script>
 </head>
 <body class="nonexpanding">
     <div id="all-wrapper" class="nonexpanding">
@@ -28,7 +33,7 @@
         <div id="upload-modal-wrapper" class="float hidden">
             <div class="modal-tint float"></div>
             <div id="upload-modal">
-                <input type="file" name="resume-upload" id="resume-upload" accept=".pdf" multiple>
+                <input type="file" id="resume-upload" accept=".pdf" multiple>
                 <div id="upload-modal-top" class="fill">
                     <label for="resume-upload"><i class="fa-solid fa-file-arrow-up clickable"></i></label>
                     <div id="upload-desc">Upload files (.pdf only)</div>
@@ -47,7 +52,7 @@
                     <a href="../pages/create.html" class="title"><i class="fa-solid fa-plus"></i></a>
                 </div>
                 <div id="body-top-right" class="fill">
-                    <input type="text" id="searchbar" placeholder="Search">
+                    <input type="text" id="searchbar" placeholder="Search via Job Title">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
                 
@@ -57,61 +62,6 @@
                     <i class="fa-solid fa-hands title2"></i>
                     <div class = "title2">Seems like there isn't anything here. Created listings appear here.</div>
                 </div>
-
-                <div class="job" id="1">
-                    <div class="job-left">
-                        <div class="job-position">Customer Expert I </div>
-                        <div class="job-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia in id voluptate, suscipit minus quas, cumque maxime dolorem enim quis repellendus? Eaque porro minima quaerat cupiditate quidem adipisci sit quos. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia in id voluptate, suscipit minus quas, cumque maxime dolorem enim quis repellendus? Eaque porro minima quaerat cupiditate quidem adipisci sit quos Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia in id voluptate, suscipit minus quas, cumque maxime dolorem enim quis repellendus? Eaque porro minima quaerat cupiditate quidem adipisci sit quos Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia in id voluptate, suscipit minus quas, cumque maxime dolorem enim quis repellendus? Eaque porro minima quaerat cupiditate quidem adipisci sit quos</div>
-                    </div>
-                    <div class="job-right">
-                        <div class="job-actions">
-                            <i class="fa-solid fa-trash clickable delete-job"></i>
-                            <i class="fa-solid fa-pen-to-square clickable edit-job"></i>
-                            <i class="fa-solid fa-upload clickable upload-job"></i>
-                            <i class="fa-solid fa-ranking-star clickable results-job"></i>
-                        </div>
-                        <div class="job-stats">
-                            <div class="report-status">Report Not Ready</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="job" id="2">
-                    <div class="job-left">
-                        <div class="job-position">Customer Expert I </div>
-                        <div class="job-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis voluptas ad commodi alias inventore ex. Perferendis, eius dolores. Dolorem reiciendis omnis excepturi accusamus itaque sapiente sint fugiat id deserunt voluptatum!</div>
-                    </div>
-                    <div class="job-right">
-                        <div class="job-actions">
-                            <i class="fa-solid fa-trash clickable delete-job"></i>
-                            <i class="fa-solid fa-pen-to-square clickable edit-job"></i>
-                            <i class="fa-solid fa-upload clickable upload-job"></i>
-                            <i class="fa-solid fa-ranking-star clickable results-job"></i>
-                        </div>
-                        <div class="job-stats">
-                            <div class="report-status">Report Not Ready</div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="job" id="3">
-                    <div class="job-left">
-                        <div class="job-position">Customer Expert I </div>
-                        <div class="job-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia in id voluptate, suscipit minus quas, cumque maxime dolorem enim quis repellendus? Eaque porro minima quaerat cupiditate quidem adipisci sit quos. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia in id voluptate, suscipit minus quas, cumque maxime dolorem enim quis repellendus? Eaque porro minima quaerat cupiditate quidem adipisci sit quos Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia in id voluptate, suscipit minus quas, cumque maxime dolorem enim quis repellendus? Eaque porro minima quaerat cupiditate quidem adipisci sit quos Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia in id voluptate, suscipit minus quas, cumque maxime dolorem enim quis repellendus? Eaque porro minima quaerat cupiditate quidem adipisci sit quos</div>
-                    </div>
-                    <div class="job-right">
-                        <div class="job-actions">
-                            <i class="fa-solid fa-trash clickable delete-job"></i>
-                            <i class="fa-solid fa-pen-to-square clickable edit-job"></i>
-                            <i class="fa-solid fa-upload clickable upload-job"></i>
-                            <i class="fa-solid fa-ranking-star clickable results-job"></i>
-                        </div>
-                        <div class="job-stats">
-                            <div class="report-status">Report Not Ready</div>
-                        </div>
-                    </div>
-                </div>
-                
             </div>
         </div>
     </div>

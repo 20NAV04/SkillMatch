@@ -7,6 +7,9 @@
     <link rel="icon" type="mage/x-icon" href="./assets/favicon.png">
     <link rel="stylesheet" href="./styles/index.css">
     <script src="https://kit.fontawesome.com/ee22af0760.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="./scripts/supabase.js"></script>
+    <script src="./scripts/index.js" defer></script>
 </head>
 <body class = "nonexpanding">
     <div id="all-wrapper" class = "nonexpanding">
@@ -32,11 +35,11 @@
             </div>
 
             <div id="login-wrapper">
-                <form id="login-form" name="login">
+                <form id="login-form">
                     <div>Welcome Back.</div>
                     <div>
-                        <input type="text" name="email" required placeholder="Email">
-                        <input type="password" name="password" placeholder="Password">
+                        <input type="text" required placeholder="Email" id="email-field">
+                        <input type="password" required placeholder="Password" id="password-field">
                         <div id="forgot-password-btn" class="clickable">Forgot Password?</div>
                     </div>
                     <div>   

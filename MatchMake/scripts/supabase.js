@@ -1,0 +1,1 @@
+const supabaseClient = supabase.createClient('https://omenefsdhphbepichpgv.supabase.co', 'sb_publishable_etIpa5KqtKmy-rypCQvVvQ_OSMPszb-');

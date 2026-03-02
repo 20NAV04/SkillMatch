@@ -7,6 +7,9 @@
     <link rel="icon" type="mage/x-icon" href="../assets/favicon.png">
     <link rel="stylesheet" href="../styles/register.css">
     <script src="https://kit.fontawesome.com/ee22af0760.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="../scripts/supabase.js"></script>
+    <script src="../scripts/register.js" defer></script>
 </head>
 <body class = "nonexpanding">
     <div id="all-wrapper" class = "nonexpanding">
@@ -31,13 +34,13 @@
                 <div id="hero-body">Upload job descriptions and resumes from your existing hiring systems and receive ranked, explainable screening results powered by AI.</div>
             </div>
 
-            <div id="login-wrapper">
-                <form id="login-form" name="register">
+            <div id="register-wrapper">
+                <form id="register-form">
                     <div>Almost There.</div>
                     <div>
-                        <input type="text" name="email" required placeholder="Email">
-                        <input type="password" name="password" placeholder="Password">
-                        <input type="password" name="confirm-password" placeholder="Confirm Password">
+                        <input type="text" name="email" required placeholder="Email" id="email-field">
+                        <input type="password" name="password" placeholder="Password" id="password-field">
+                        <input type="password" name="confirm-password" placeholder="Confirm Password" id="password-confirm-field">
                     </div>
                     <div>   
                         <button type="submit" id="register-btn" class="clickable">Create Account</button>

@@ -14,7 +14,7 @@ class Header extends HTMLElement {
             </div>
             <div id="header-right" class="nonexpanding">
                 <a href="../pages/create.html">Create</a>
-                <a href="../index.html" id ="logout-btn">Logout</a>
+                <a class = 'clickable' id ="logout-btn">Logout</a>
                 <a href="../pages/account-settings"><i class="fa-solid fa-gear"></i></a>
             </div>
     </div>

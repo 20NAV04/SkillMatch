@@ -8,61 +8,18 @@
     <link rel="stylesheet" href="../styles/common.css">
     <link rel="stylesheet" href="../styles/result.css">
     <script src="../components/header.js" defer></script>
-    <script src="../scripts/result.js" defer></script>
     <script src="https://kit.fontawesome.com/ee22af0760.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="../scripts/supabase.js"></script>
+    <script src="../scripts/auth.js"></script>
+    <script src="../scripts/common.js" defer></script>
+    <script src="../scripts/result.js" defer></script>
 </head>
 <body>
     <div id="all-wrapper">
         <header-component></header-component>
         <div id="body" class="nonexpanding fill">
             <div id="left" class="nonexpanding fill">
-                <div class="job clickable" id="1">
-                    <div class="job-left">
-                        <div class="name">John Doe</div>
-                        <div class="summary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores quod laborum rem voluptatibus velit odio fugit quis neque veniam ullam consequuntur, nemo voluptatum dicta corporis voluptatem? Eaque facilis aut deserunt.</div>
-                        <div><a href="">View Resume</a></div>
-                    </div>
-                    <div class="job-right">
-                        <div>Match Score</div>
-                        <div class="score">98</div>
-                    </div>
-                </div>
-
-                <div class="job dbg2" id="2">
-                    <div class="job-left">
-                        <div class="name">John Doe</div>
-                        <div class="summary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores quod laborum rem voluptatibus velit odio fugit quis neque veniam ullam consequuntur, nemo voluptatum dicta corporis voluptatem? Eaque facilis aut deserunt.</div>
-                        <a href="">View Resume</a>
-                    </div>
-                    <div class="job-right">
-                        <div>Match Score</div>
-                        <div class="score">98</div>
-                    </div>
-                </div>
-
-                <div class="job dbg2" id="3">
-                    <div class="job-left">
-                        <div class="name">John Doe</div>
-                        <div class="summary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores quod laborum rem voluptatibus velit odio fugit quis neque veniam ullam consequuntur, nemo voluptatum dicta corporis voluptatem? Eaque facilis aut deserunt.</div>
-                        <a href="">View Resume</a>
-                    </div>
-                    <div class="job-right">
-                        <div>Match Score</div>
-                        <div class="score">98</div>
-                    </div>
-                </div>
-
-                <div class="job dbg2" id="4">
-                    <div class="job-left">
-                        <div class="name">John Doe</div>
-                        <div class="summary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores quod laborum rem voluptatibus velit odio fugit quis neque veniam ullam consequuntur, nemo voluptatum dicta corporis voluptatem? Eaque facilis aut deserunt.</div>
-                        <a href="">View Resume</a>
-                    </div>
-                    <div class="job-right">
-                        <div>Match Score</div>
-                        <div class="score">98</div>
-                    </div>
-                </div>
             </div>
             <div id="right" class="nonexpanding fill">
                 <div id="right-top">

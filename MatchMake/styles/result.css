@@ -25,6 +25,7 @@
 .name {
     font-size: 1.5rem;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .summary {
@@ -37,7 +38,7 @@
     border-radius: .5rem;
     padding: 1rem;
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 1fr;
     box-shadow: -1px 20px 11px -3px rgba(0,0,0,0.1);
 }
 
@@ -85,3 +86,10 @@
     padding-right: 1rem;
 }
 
+.job-right > div {
+    display: none;
+}
+
+.insight {
+    display: none;
+}

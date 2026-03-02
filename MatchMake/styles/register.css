@@ -113,7 +113,7 @@ body, html {
     font-weight: bolder;
 }
 
-#login-wrapper {
+#register-wrapper {
     position: relative;
     z-index: 3;
     align-self: center;
@@ -127,7 +127,7 @@ body, html {
     -moz-box-shadow: -1px 20px 11px -3px rgba(0,0,0,0.17);
 }
 
-#login-form {
+#register-form {
     height: 100%;
     width: 100%;
     display: grid;
@@ -136,13 +136,13 @@ body, html {
     gap: 2rem;
 }
 
-#login-form > div:first-child {
+#register-form > div:first-child {
     font-size: 2rem;
     text-align: center;
     
 }
 
-#login-form > div:nth-child(2) {
+#register-form > div:nth-child(2) {
     height: 100%;
     width: 100%;
     display: grid;
@@ -150,7 +150,7 @@ body, html {
     gap: 1rem;
 }
 
-#login-form > div:last-child {
+#register-form > div:last-child {
     height: 100%;
     width: 100%;
     display: grid;
